@@ -40,7 +40,8 @@ import java.util.logging.*;
             }
 
             void balance() {
-                l.info("\nYour Current Balance : " + bal);
+                String s="\nYour Current Balance : " + bal;
+                l.info(s);
             }
 
         }
