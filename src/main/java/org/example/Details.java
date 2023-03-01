@@ -17,7 +17,6 @@ import java.util.logging.*;
             Logger l=Logger.getLogger("BankAccount");
             String holderName;
             int accountNumber;
-
             int bal, depositAmount, withdrawAmount;
 
             Details(String name, int an,int Bal) {
