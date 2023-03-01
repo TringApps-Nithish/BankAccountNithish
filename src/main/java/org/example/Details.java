@@ -17,12 +17,14 @@ import java.util.logging.*;
             Logger l=Logger.getLogger("BankAccount");
             String holderName;
             int accountNumber;
-            int bal, depositAmount, withdrawAmount;
+            int bal;
+            int depositAmount;
+            int withdrawAmount;
 
-            Details(String name, int an,int Bal) {
-                holderName = name;
-                accountNumber = an;
-                bal = Bal;
+            Details(String name, int an,int bal) {
+                this.holderName = name;
+                this.accountNumber = an;
+                this.bal = bal;
             }
 
             void deposit() {
@@ -38,7 +40,7 @@ import java.util.logging.*;
             }
 
             void balance() {
-                System.out.println("\nYour Current Balance : " + bal);
+                l.info("\nYour Current Balance : " + bal);
             }
 
         }

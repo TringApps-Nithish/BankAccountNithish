@@ -8,7 +8,7 @@ class BankAccount {
         String holderName;
         int accountNumber;
         int balance;
-        int ch = 0;
+        int choice = 0;
         Scanner sc = new Scanner(System.in);
         Logger l=Logger.getLogger("BankAccount");
         l.info("Enter the Account Holder Name : ");
@@ -19,11 +19,11 @@ class BankAccount {
         balance = sc.nextInt();
         Details ob = new Details(holderName, accountNumber,balance);
 
-        while (ch != 4) {
-            l.info("\nService Provided ....\n 1.Deposit \n 2.Withdraw \n 3.Check Balance \n 4.Exit \n");
-            l.info("\nEnter Your Choice : ");
-            ch = sc.nextInt();
-            switch (ch) {
+        while (choice != 4) {
+            l.info("\nService Provided ....\n 1.Deposit \n 2.Withdraw \n 3.check Balance \n 4.Exit \n");
+            l.info("\nEnter Your choice : ");
+            choice = sc.nextInt();
+            switch (choice) {
                 case 1 -> ob.deposit();
                 case 2 -> ob.withdraw();
                 case 3 -> ob.balance();
